@@ -1,0 +1,41 @@
+Algoritmo "CALCULO_MEDIA_3_ALUNOS"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 29/05/2025
+var
+	// Seção de Declarações das variáveis
+    NOME: CARACTERE
+    NOTA1, NOTA2, NOTA3, NOTA4, MEDIA, CONT: REAL
+
+inicio
+	 // Seção de Comandos, procedimento, funções, operadores, etc...
+
+    CONT <- 1
+    ENQUANTO CONT <= 3 FACA
+        escreva("Digite o nome do ", CONT,"º aluno:")
+        leia(NOME)
+
+        escreval("Digite as notas das 04 provas do aluno ", NOME)
+        leia(NOTA1)
+        leia(NOTA2)
+        leia(NOTA3)
+        leia(NOTA4)
+
+        MEDIA <- (NOTA1 + NOTA2 + NOTA3 + NOTA4) / 4
+
+        SE MEDIA > 7 ENTAO
+            escreva("Aluno ", NOME, " APROVADO com média ", MEDIA)
+        SENAO 
+		SE MEDIA < 5 ENTAO
+            	escreva("Aluno ", NOME, " REPROVADO com média ", MEDIA)
+        	SENAO
+            	escreva("Aluno ", NOME, " está em RECUPERAÇÃO com média ", MEDIA)
+        	FIMSE
+        FIMSE
+
+	i <- i + 1
+
+    FIMENQUANTO
+fimalgoritmo
